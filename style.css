@@ -209,6 +209,81 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* === Medsystem === */
+    background-color: #f0f8ff;
+    padding: 50px 20px;
+    margin: 40px 0;
+    border-radius: 12px;
+}
+
+.system-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.system-title {
+    font-size: 28px;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 80px;
+    height: 3px;
+    background-color: #28a745;
+    border: none;
+    margin: 15px auto 30px auto;
+}
+
+.system-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.system-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.system-card h3 {
+    color: #28a745;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.system-description {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #636e72;
+    margin-bottom: 25px;
+}
+
+/* ✅ BUTTON STYLE — LOOKS LIKE BUTTON, WORKS LIKE LINK */
+.view-system-btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: #ffffff !important;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.view-system-btn:hover {
+    background-color: #218838;
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /* === SKILLS SECTION === */
 .skills-section {
   padding: 80px 20px;
