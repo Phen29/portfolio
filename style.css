@@ -186,7 +186,7 @@ h1 {
 
 .about-image {
   flex: 1;
-  min-width: 280px;
+  min-width: 400px;
 }
 
 .about-image img {
