@@ -203,30 +203,30 @@
         </div>
       </div>
 
-      <!-- RIGHT SIDE: MESSAGE FORM (NO SUBJECT) -->
-      <div class="contact-form">
-        <form action="https://mail.google.com/mail/?view=cm&fs=1&to=stephenjohnmanalac@gmail.com" method="get" target="_blank">
-          
-          <div class="form-group">
-            <label>Name</label>
-            <input type="text" name="su" required>
-          </div>
+<div class="contact-form">
+  <h3>Send me a message</h3>
 
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" name="email" required>
-          </div>
-
-          <div class="form-group">
-            <label>Message</label>
-            <textarea name="body" rows="6" required></textarea>
-          </div>
-
-          <button type="submit">Send</button>
-        </form>
+  <form action="https://mail.google.com/mail/?view=cm&fs=1&to=stephenjohnmanalac@gmail.com" method="get" target="_blank">
+    
+     <!-- NAME + EMAIL SIDE BY SIDE -->
+     <div class="form-row">
+   <div class="form-group">
+        <label>YOUR NAME</label>
+        <input type="text" name="su" placeholder="enter name" required>
+     </div>
+   <div class="form-group">
+        <label>YOUR EMAIL</label>
+        <input type="email" name="email" placeholder="@gmail.com" required>
       </div>
-
     </div>
-  </div>
+   <div class="form-group">
+        <label>MESSAGE</label>
+        <textarea name="body" placeholder="Hi Stephen, I'd love to connect about..." rows="6" required></textarea>
+     </div>
+
+    <button type="submit">✉️ Send via Gmail</button>
+    <small>Clicking "Send via Gmail" will open your Gmail compose window with your message pre-filled.</small>
+  </form>
+</div>
 </section>
 </html>

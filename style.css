@@ -504,50 +504,65 @@ h1 {
 }
 
 .info-box h3 {
-  font-size: 1.3rem; /* big text */
+  font-size: 1.3rem;
   font-weight: 600;
   color: #444;
   margin: 0 0 6px 0;
 }
 
 .info-box p {
-  font-size: 1.2rem; /* big text */
+  font-size: 1.2rem;
   color: #555;
   margin: 0;
 }
 
-/* RIGHT FORM BOX — LARGE & SPACIOUS */
+/* RIGHT FORM BOX — FULL WIDE VERSION */
 .contact-form {
   background-color: #d5d5d5;
-  padding: 60px 50px; /* lots of inside space */
+  padding: 60px 50px;
   border-radius: 32px;
   width: 100%;
-  max-width: 650px; /* big form box */
+  max-width: 800px; /* ✅ WIDER NOW — exactly what you want */
   margin: 0 auto;
 }
 
+.contact-form h3 { 
+  margin-bottom: 50px; 
+
+}
+
 .form-group {
-  margin-bottom: 40px; /* big space between fields */
+  margin-bottom: 40px;
 }
 
 .form-group label {
   display: block;
-  font-size: 1.15rem; /* big labels */
+  font-size: 1.15rem;
   color: #777;
   margin-bottom: 15px;
-  text-align: center;
+  text-align: left; /* ✅ align text left like example */
+  font-weight: 600;
+}
+
+/* ✅ NEW: Name & Email side by side */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
 }
 
 .form-group input {
   width: 100%;
-  padding: 15px 0; /* tall input lines */
+  padding: 15px 20px;
   background: transparent;
-  border: none;
-  border-bottom: 1px solid #bbb;
-  font-size: 1.25rem; /* big input text */
+  border: 1px solid #bbb;
+  border-radius: 12px;
+  font-size: 1.25rem;
   color: #444;
-  text-align: center;
+  text-align: left;
   outline: none;
+  box-sizing: border-box;
 }
 
 .form-group textarea {
@@ -558,20 +573,21 @@ h1 {
   padding: 20px;
   font-size: 1.25rem;
   color: #444;
-  min-height: 180px; /* tall message box */
+  min-height: 180px;
   resize: none;
   outline: none;
-  text-align: center;
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .contact-form button {
   width: 100%;
-  padding: 20px; /* big button */
+  padding: 20px;
   background-color: #222;
   color: #fff;
   border: none;
-  border-radius: 50px;
-  font-size: 1.3rem; /* big button text */
+  border-radius: 12px;
+  font-size: 1.3rem;
   font-weight: 500;
   cursor: pointer;
   transition: 0.2s;
@@ -579,15 +595,4 @@ h1 {
 
 .contact-form button:hover {
   background-color: #000;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .contact-container {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-  .info-box, .contact-form {
-    max-width: 100%;
-  }
 }
