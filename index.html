@@ -175,35 +175,52 @@
 </section>
 
 <!-- CONTACT SECTION -->
-<section id="contact">
-    <h1>CONTACT NOW!</h1>
+<section class="contact-section" id="contact">
+  <div class="container">
+    <h2 class="section-title">CONTACT NOW!</h2>
     <div class="contact-container">
-
-        <div class="contact-card">
-            <span class="icon">📞</span>
-            <div class="contact-text">
-                <h4>Phone</h4>
-                <p>+63955-567-8922</p>
-            </div>
+      
+      <!-- LEFT SIDE: YOUR CONTACT INFO -->
+      <div class="contact-info">
+        <div class="info-box">
+          <span class="icon">📞</span>
+          <div>
+            <h3>Phone</h3>
+            <p>+63955-567-8922</p>
+          </div>
         </div>
-
-        <div class="contact-card">
-            <span class="icon">📧</span>
-            <div class="contact-text">
-                <h4>Email</h4>
-                <p>stephenjohnmanalac
-                    @gmail.com</p>
-            </div>
+        <div class="info-box">
+          <span class="icon">✉️</span>
+          <div>
+            <h3>Email</h3>
+            <p>stephenjohnmanalac@gmail.com</p>
+          </div>
         </div>
-
-        <div class="contact-card">
-            <span class="icon">📍</span>
-            <div class="contact-text">
-                <h4>Location</h4>
-                <p>Philippines</p>
-            </div>
+        <div class="info-box">
+          <span class="icon">📍</span>
+          <div>
+            <h3>Location</h3>
+            <p>Philippines</p>
+          </div>
         </div>
+      </div>
+      <!-- RIGHT SIDE: FUNCTIONAL MESSAGE FORM -->
+      <div class="contact-form">
+        <h3>Send me a message</h3>
+        <p>Fill out the form and it will open your Gmail — ready to send directly to me.</p>
+        <form action="https://mail.google.com/mail/?view=cm&fs=1&to=stephenjohnmanalac@gmail.com" method="get" target="_blank">
+          <div class="form-row">
+            <input type="text" name="su" placeholder="YOUR NAME" required>
+            <input type="email" name="email" placeholder="YOUR EMAIL" required>
+          </div>
+          <input type="text" name="subject" placeholder="SUBJECT" value="Project Collaboration, Inquiry..." required>
+          <textarea name="body" placeholder="Hi Stephen, I'd love to connect about..." rows="5" required></textarea>
+          <button type="submit">✉️ Send via Gmail</button>
+        </form>
+        <p class="form-note">* Clicking "Send via Gmail" opens your email with all details pre-filled.</p>
+      </div>
 
     </div>
+  </div>
 </section>
 </html>
