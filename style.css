@@ -458,45 +458,44 @@ h1 {
 }
 
 /* === CONTACT SECTION === */
-/* === CONTACT SECTION — BIGGER WIDE VERSION FOR WEBSITE === */
 .contact-section {
-  padding: 100px 40px; /* more top/bottom space */
+  padding: 120px 60px; /* big top/bottom space */
   background-color: #e0e0e0;
 }
 
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px; /* bigger gap between left & right */
+  gap: 100px; /* big gap between left & right */
   align-items: center;
-  max-width: 1300px; /* much wider container */
+  max-width: 1400px; /* very wide container like example */
   margin: 0 auto;
 }
 
-/* LEFT INFO BOXES — BIGGER & WIDER */
+/* LEFT INFO BOXES — BIG & WIDE, same shape */
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 25px; /* more space between boxes */
+  gap: 30px;
   align-items: center;
 }
 
 .info-box {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
   background-color: #d5d5d5;
-  padding: 25px 40px; /* taller & wider boxes */
+  padding: 30px 50px; /* much taller & wider boxes */
   border-radius: 50px;
   width: 100%;
-  max-width: 550px; /* wider pill boxes */
+  max-width: 650px; /* large pill boxes */
 }
 
 .info-box .icon {
-  font-size: 24px; /* bigger icons */
+  font-size: 28px; /* big icons */
   color: #666;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -505,47 +504,47 @@ h1 {
 }
 
 .info-box h3 {
-  font-size: 1.15rem; /* bigger text */
+  font-size: 1.3rem; /* big text */
   font-weight: 600;
   color: #444;
-  margin: 0 0 5px 0;
+  margin: 0 0 6px 0;
 }
 
 .info-box p {
-  font-size: 1.05rem; /* bigger text */
+  font-size: 1.2rem; /* big text */
   color: #555;
   margin: 0;
 }
 
-/* RIGHT FORM BOX — BIGGER & WIDER */
+/* RIGHT FORM BOX — LARGE & SPACIOUS */
 .contact-form {
   background-color: #d5d5d5;
-  padding: 50px 45px; /* much more inside space */
-  border-radius: 28px;
+  padding: 60px 50px; /* lots of inside space */
+  border-radius: 32px;
   width: 100%;
-  max-width: 550px; /* wider form box */
+  max-width: 650px; /* big form box */
   margin: 0 auto;
 }
 
 .form-group {
-  margin-bottom: 30px; /* more space between fields */
+  margin-bottom: 40px; /* big space between fields */
 }
 
 .form-group label {
   display: block;
-  font-size: 1rem; /* bigger labels */
+  font-size: 1.15rem; /* big labels */
   color: #777;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
 .form-group input {
   width: 100%;
-  padding: 12px 0; /* taller input lines */
+  padding: 15px 0; /* tall input lines */
   background: transparent;
   border: none;
   border-bottom: 1px solid #bbb;
-  font-size: 1.1rem; /* bigger input text */
+  font-size: 1.25rem; /* big input text */
   color: #444;
   text-align: center;
   outline: none;
@@ -555,11 +554,11 @@ h1 {
   width: 100%;
   background: transparent;
   border: 1px solid #bbb;
-  border-radius: 16px;
-  padding: 18px; /* bigger message box */
-  font-size: 1.1rem; /* bigger text */
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 1.25rem;
   color: #444;
-  min-height: 150px; /* taller message area */
+  min-height: 180px; /* tall message box */
   resize: none;
   outline: none;
   text-align: center;
@@ -567,12 +566,12 @@ h1 {
 
 .contact-form button {
   width: 100%;
-  padding: 16px; /* bigger button */
+  padding: 20px; /* big button */
   background-color: #222;
   color: #fff;
   border: none;
   border-radius: 50px;
-  font-size: 1.15rem; /* bigger button text */
+  font-size: 1.3rem; /* big button text */
   font-weight: 500;
   cursor: pointer;
   transition: 0.2s;
@@ -586,7 +585,7 @@ h1 {
 @media (max-width: 768px) {
   .contact-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 50px;
   }
   .info-box, .contact-form {
     max-width: 100%;
