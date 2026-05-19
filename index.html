@@ -177,46 +177,55 @@
 <!-- CONTACT SECTION -->
 <section class="contact-section" id="contact">
   <div class="container">
-    <h2 class="section-title">CONTACT NOW!</h2>
     <div class="contact-container">
-      
-      <!-- LEFT: CONTACT INFO -->
+
+      <!-- LEFT SIDE: CONTACT INFO BOXES -->
       <div class="contact-info">
         <div class="info-box">
-          <span class="icon">📞</span>
+          <span class="icon">➔</span>
           <div>
-            <h3>Phone</h3>
-            <p>+63955-567-8922</p>
-          </div>
-        </div>
-        <div class="info-box">
-          <span class="icon">✉️</span>
-          <div>
-            <h3>Email</h3>
+            <h3>Email:</h3>
             <p>stephenjohnmanalac@gmail.com</p>
           </div>
         </div>
+
         <div class="info-box">
-          <span class="icon">📍</span>
+          <span class="icon">📞</span>
           <div>
-            <h3>Location</h3>
+            <h3>Phone:</h3>
+            <p>+63955-567-8922</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <span class="icon">🗺</span>
+          <div>
+            <h3>Location:</h3>
             <p>Philippines</p>
           </div>
         </div>
       </div>
 
-      <!-- RIGHT: MESSAGE FORM -->
+      <!-- RIGHT SIDE: MESSAGE FORM (NO SUBJECT) -->
       <div class="contact-form">
-        <h3>Send me a message</h3>
-        <p>Fill out the form — it will open Gmail ready to send directly to me.</p>
         <form action="https://mail.google.com/mail/?view=cm&fs=1&to=stephenjohnmanalac@gmail.com" method="get" target="_blank">
-          <div class="form-row">
-            <input type="text" name="su" placeholder="YOUR NAME" required>
-            <input type="email" name="email" placeholder="YOUR EMAIL" required>
+          
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="su" required>
           </div>
-          <input type="text" name="subject" placeholder="SUBJECT" value="Project Inquiry / Collaboration" required>
-          <textarea name="body" placeholder="Hi Stephen, I'd like to talk about..." rows="5" required></textarea>
-          <button type="submit">✉️ Send via Gmail</button>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="body" rows="6" required></textarea>
+          </div>
+
+          <button type="submit">Send</button>
         </form>
       </div>
 
