@@ -432,13 +432,13 @@ h1 {
 }
 
 .about-image {
-  flex: 1.2; /* ⬅️ increased from 1 → 1.2 to make image wider */
-  min-width: 500px; /* ⬅️ wider minimum size */
+  flex: 1.5; /* ⬅️ increased from 1 → 1.2 to make image wider */
+  min-width: 550px;
 }
 
 .about-image img {
   width: 100%;
-  max-width: 600px; /* ⬅️ bigger maximum width */
+  max-width: 600px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   object-fit: cover;
@@ -451,7 +451,7 @@ h1 {
 }
 
 .about-text p {
-  font-size: 1.15rem; /* ⬅️ slightly bigger font — much easier to read */
+  font-size: 1.50rem;
   line-height: 1.8;
   color: #333;
   margin-bottom: 20px;
