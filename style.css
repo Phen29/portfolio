@@ -426,7 +426,7 @@ h1 {
 .about-content {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 80px; /* ⬅️ INCREASED GAP from 60px → 80px (slightly more distance) */
   flex-wrap: wrap;
   justify-content: center;
 }
