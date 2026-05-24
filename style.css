@@ -154,261 +154,13 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* === ABOUT ME === */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-  position: relative;
-  z-index: 1;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 50px;
-  color: #000;
-}
-
-.about-section {
-  padding: 80px 20px;
-  background-color: #e0e0e0;
-}
-
-.about-content {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.about-image {
-  flex: 1;
-  min-width: 450px;
-}
-
-.about-image img {
-  width: 100%;
-  max-width: 520px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-}
-
-.about-text {
-  flex: 2;
-  min-width: 320px;
-  text-align: left;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* === Medsystem === */
-.medsystem-card {
-  max-width: 720px;
-  margin: 3rem auto;
-  border-radius: 16px;
-  overflow: hidden;
-  background: #ffffff;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  font-family: 'Segoe UI', Roboto, sans-serif;
-}
-
-/* --- SEPARATOR: MedSystem ↓ Skills --- */
-.medsystem-card {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 3rem;
-  padding-bottom: 1rem;
-}
-
-.medsystem-header {
-  background: linear-gradient(135deg, #16a085 0%, #27ae60 100%);
-  height: 210px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.main-icon {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 1.2rem;
-  filter: brightness(1) invert(1);
-}
-
-.view-live-btn {
-  background: #ffffff;
-  color: #0E4C70;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 9px 22px;
-  border-radius: 22px;
-  text-decoration: none;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-  transition: all 0.25s ease;
-  z-index: 2;
-}
-.view-live-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 14px rgba(0,0,0,0.15);
-}
-
-.medsystem-body {
-  padding: 1.8rem 2rem;
-}
-
-.tech-tags {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-}
-.tag {
-  background: #F3E8D9;
-  color: #92643A;
-  font-size: 12px;
-  font-weight: 500;
-  padding: 5px 12px;
-  border-radius: 14px;
-}
-
-.medsystem-title {
-  font-size: 22px;
-  color: #332820;
-  margin: 0 0 0.7rem 0;
-  font-weight: 700;
-}
-
-.medsystem-desc {
-  color: #70645A;
-  font-size: 15px;
-  line-height: 1.6;
-  margin: 0 0 1.2rem 0;
-}
-
-.bottom-link {
-  color: #B45309;
-  font-weight: 600;
-  font-size: 14px;
-  text-decoration: none;
-}
-.bottom-link:hover {
-  text-decoration: underline;
-}
-
-.section-heading {
-  text-align: center;
-  margin-top: 6rem;
-  margin-bottom: 2rem;
-  border-top: 1px solid #ddd;
-  padding-top: 3rem;
-}
-
-.section-heading h2 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-.section-description {
-  font-size: 16px;
-  color: #666;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* === SKILLS SECTION === */
-.skills-section {
-  padding: 80px 20px;
-  background-color: #e0e0e0;
-  
-  /* BACKGROUND DESIGN LIKE IN IMAGE */
-  background-image: 
-    radial-gradient(circle, #bbb 2px, transparent 2px),
-    linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px);
-  background-size: 60px 60px, 40px 40px, 40px 40px;
-  
-  position: relative;
-  overflow: hidden;
-}
-
-/* DECORATIVE SHAPES LIKE IN THE PICTURE */
-.skills-section::before {
-  content: '';
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  width: 150px;
-  height: 150px;
-  border: 3px solid rgba(0,0,0,0.15);
-  border-radius: 50%;
-}
-
-.skills-section::after {
-  content: '';
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-  width: 100px;
-  height: 100px;
-  border: 3px solid rgba(0,0,0,0.15);
-  transform: rotate(45deg);
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.skill-card {
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  text-align: center;
-}
-
-.skill-header {
-  background-color: #444444; /* DARK HEADER */
-  padding: 20px;
-}
-
-.skill-header h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ffffff; /* WHITE TEXT */
-  margin: 0;
-}
-
-.skill-body {
-  background-color: #ffffff; /* WHITE BODY */
-  padding: 25px;
-}
-
-.skill-body p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #333333;
-  margin: 0;
-}
-
 /* === PROJECTS === */
 #projects h1 {
     font-size: 3rem;
     margin-bottom: 50px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .projects-grid {
@@ -417,6 +169,7 @@ h1 {
     gap: 50px;
     width: 98%;
     max-width: 1500px;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -457,22 +210,410 @@ h1 {
     line-height: 1.8;
 }
 
+/* === PROJECTS === */
+#projects h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    gap: 50px;
+    width: 98%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: #d5d5d5;
+    border: 1px solid #bbbbbb;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    min-height: 450px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 30px;
+}
+
+.project-info h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.project-info p {
+    font-size: 1.1rem;
+    color: #444444;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* === MEDSYSTEM — FIXED ICON SIZE & COLOR === */
+.medsystem-card {
+    background: #d5d5d5;
+    border: 1px solid #bbbbbb;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.medsystem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.medsystem-header {
+    background: linear-gradient(135deg, #16a085 0%, #27ae60 100%);
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.view-live-btn {
+    background: #ffffff;
+    color: #0E4C70;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 9px 22px;
+    border-radius: 22px;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    transition: all 0.25s ease;
+    z-index: 2;
+}
+.view-live-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.15);
+}
+
+.medsystem-body {
+    padding: 1.8rem 2rem;
+}
+
+.tech-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+.tag {
+    background: #F3E8D9;
+    color: #92643A;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 14px;
+}
+
+.medsystem-title {
+    font-size: 22px;
+    color: #332820;
+    margin: 0 0 0.7rem 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.medsystem-desc {
+    color: #444444;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 0 1.2rem 0;
+}
+
+.bottom-link {
+    color: #B45309;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
+.bottom-link:hover {
+    text-decoration: underline;
+}
+
+/* Certificates Section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #e0e0e0; /* ✅ Correct gray background */
+}
+
+/* === NAVIGATION BAR === */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #e0e0e0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+}
+
+.nav-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* === CERTIFICATES SECTION === */
+.certificates-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e0e0e0; /* ✅ Same gray background like your original */
+}
+
+.sub-heading {
+    color: #008956; /* ✅ Correct green accent from your design */
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.main-heading {
+    color: #ffffff; /* ✅ White text like original */
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* === LAYOUT === */
+.certificates-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 140px; /* ✅ Exact spacing like your layout */
+    margin-bottom: 40px;
+}
+
+.top-row {
+    margin-left: -80px; /* ✅ Exact position offset */
+}
+
+.bottom-row {
+    gap: 110px;
+    margin-left: 0;
+}
+
+/* === CARD STYLE === */
+.cert-card {
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 150px; /* ✅ Small size like you wanted */
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.cert-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+/* === VIEW BUTTON — SAME AS MEDSYSTEM/PROJECTS === */
+.view-btn {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: transparent;
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+
+.view-btn:hover {
+    background-color: #e0e0e0;
+    color: #000;
+    border-color: #999;
+}
+
+/* === SKILLS SECTION === */
+.skills-section {
+  padding: 80px 20px;
+  background-color: #121212;
+  background-image: 
+    radial-gradient(circle, #bbb 2px, transparent 2px),
+    linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px);
+  background-size: 60px 60px, 40px 40px, 40px 40px;
+  
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-section::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 150px;
+  height: 150px;
+  border: 3px solid rgba(0,0,0,0.15);
+  border-radius: 50%;
+}
+
+.skills-section::after {
+  content: '';
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgba(0,0,0,0.15);
+  transform: rotate(45deg);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.skill-header {
+  background-color: #444444;
+  padding: 20px;
+}
+
+.skill-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.skill-body {
+  background-color: #ffffff;
+  padding: 25px;
+}
+
+.skill-body p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333333;
+  margin: 0;
+}
+
+/* === ABOUT ME === */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.about-section {
+  padding: 80px 20px;
+  background-color: #e0e0e0;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-image {
+  flex: 1.2;
+  min-width: 550px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 2;
+  min-width: 320px;
+  text-align: left;
+}
+
+.about-text p {
+  font-size: 1.40rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
+}
+
 /* === CONTACT SECTION === */
 .contact-section {
-  padding: 120px 60px; /* big top/bottom space */
+  padding: 120px 60px; 
   background-color: #e0e0e0;
 }
 
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 100px; /* big gap between left & right */
+  gap: 100px;
   align-items: center;
-  max-width: 1400px; /* very wide container like example */
+  max-width: 1400px;
   margin: 0 auto;
 }
 
-/* LEFT INFO BOXES — BIG & WIDE, same shape */
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -485,14 +626,14 @@ h1 {
   align-items: center;
   gap: 25px;
   background-color: #d5d5d5;
-  padding: 30px 50px; /* much taller & wider boxes */
+  padding: 30px 50px;
   border-radius: 50px;
   width: 100%;
-  max-width: 650px; /* large pill boxes */
+  max-width: 650px;
 }
 
 .info-box .icon {
-  font-size: 28px; /* big icons */
+  font-size: 28px;
   color: #666;
   width: 48px;
   height: 48px;
@@ -516,13 +657,12 @@ h1 {
   margin: 0;
 }
 
-/* RIGHT FORM BOX — FULL WIDE VERSION */
 .contact-form {
   background-color: #d5d5d5;
   padding: 60px 50px;
   border-radius: 32px;
   width: 100%;
-  max-width: 800px; /* ✅ WIDER NOW — exactly what you want */
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -540,11 +680,10 @@ h1 {
   font-size: 1.15rem;
   color: #777;
   margin-bottom: 15px;
-  text-align: left; /* ✅ align text left like example */
+  text-align: left;
   font-weight: 600;
 }
 
-/* ✅ NEW: Name & Email side by side */
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
