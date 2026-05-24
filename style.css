@@ -154,62 +154,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* === ABOUT ME === */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-  position: relative;
-  z-index: 1;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 50px;
-  color: #000;
-}
-
-.about-section {
-  padding: 80px 20px;
-  background-color: #e0e0e0;
-}
-
-.about-content {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.about-image {
-  flex: 1;
-  min-width: 450px;
-}
-
-.about-image img {
-  width: 100%;
-  max-width: 520px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-}
-
-.about-text {
-  flex: 2;
-  min-width: 320px;
-  text-align: left;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #333;
-  margin-bottom: 20px;
-}
-
 /* === Medsystem === */
 .medsystem-card {
   max-width: 720px;
@@ -457,142 +401,58 @@ h1 {
     line-height: 1.8;
 }
 
-/* === CONTACT SECTION === */
-.contact-section {
-  padding: 120px 60px; /* big top/bottom space */
+/* === ABOUT ME === */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.about-section {
+  padding: 80px 20px;
   background-color: #e0e0e0;
 }
 
-.contact-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px; /* big gap between left & right */
-  align-items: center;
-  max-width: 1400px; /* very wide container like example */
-  margin: 0 auto;
-}
-
-/* LEFT INFO BOXES — BIG & WIDE, same shape */
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  align-items: center;
-}
-
-.info-box {
+.about-content {
   display: flex;
   align-items: center;
-  gap: 25px;
-  background-color: #d5d5d5;
-  padding: 30px 50px; /* much taller & wider boxes */
-  border-radius: 50px;
-  width: 100%;
-  max-width: 650px; /* large pill boxes */
-}
-
-.info-box .icon {
-  font-size: 28px; /* big icons */
-  color: #666;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
   justify-content: center;
-  border: 1px solid #aaa;
-  border-radius: 50%;
 }
 
-.info-box h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #444;
-  margin: 0 0 6px 0;
+.about-image {
+  flex: 1;
+  min-width: 450px;
 }
 
-.info-box p {
-  font-size: 1.2rem;
-  color: #555;
-  margin: 0;
-}
-
-/* RIGHT FORM BOX — FULL WIDE VERSION */
-.contact-form {
-  background-color: #d5d5d5;
-  padding: 60px 50px;
-  border-radius: 32px;
+.about-image img {
   width: 100%;
-  max-width: 800px; /* ✅ WIDER NOW — exactly what you want */
-  margin: 0 auto;
+  max-width: 520px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
-.contact-form h3 { 
-  margin-bottom: 50px; 
-
-}
-
-.form-group {
-  margin-bottom: 40px;
-}
-
-.form-group label {
-  display: block;
-  font-size: 1.15rem;
-  color: #777;
-  margin-bottom: 15px;
-  text-align: left; /* ✅ align text left like example */
-  font-weight: 600;
-}
-
-/* ✅ NEW: Name & Email side by side */
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-bottom: 40px;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 15px 20px;
-  background: transparent;
-  border: 1px solid #bbb;
-  border-radius: 12px;
-  font-size: 1.25rem;
-  color: #444;
+.about-text {
+  flex: 2;
+  min-width: 320px;
   text-align: left;
-  outline: none;
-  box-sizing: border-box;
 }
 
-.form-group textarea {
-  width: 100%;
-  background: transparent;
-  border: 1px solid #bbb;
-  border-radius: 20px;
-  padding: 20px;
-  font-size: 1.25rem;
-  color: #444;
-  min-height: 180px;
-  resize: none;
-  outline: none;
-  text-align: left;
-  box-sizing: border-box;
-}
-
-.contact-form button {
-  width: 100%;
-  padding: 20px;
-  background-color: #222;
-  color: #fff;
-  border: none;
-  border-radius: 12px;
-  font-size: 1.3rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.contact-form button:hover {
-  background-color: #000;
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
 }
