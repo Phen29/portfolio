@@ -154,6 +154,198 @@ h1 {
     margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
+=======
+/* === Medsystem === */
+.medsystem-card {
+  max-width: 720px;
+  margin: 3rem auto;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.medsystem-card {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+.medsystem-header {
+  background: linear-gradient(135deg, #16a085 0%, #27ae60 100%);
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.main-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 1.2rem;
+  filter: brightness(1) invert(1);
+}
+
+.view-live-btn {
+  background: #ffffff;
+  color: #0E4C70;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 9px 22px;
+  border-radius: 22px;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  transition: all 0.25s ease;
+  z-index: 2;
+}
+.view-live-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(0,0,0,0.15);
+}
+
+.medsystem-body {
+  padding: 1.8rem 2rem;
+}
+
+.tech-tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.tag {
+  background: #F3E8D9;
+  color: #92643A;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 14px;
+}
+
+.medsystem-title {
+  font-size: 22px;
+  color: #332820;
+  margin: 0 0 0.7rem 0;
+  font-weight: 700;
+}
+
+.medsystem-desc {
+  color: #70645A;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 1.2rem 0;
+}
+
+.bottom-link {
+  color: #B45309;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+.bottom-link:hover {
+  text-decoration: underline;
+}
+
+.section-heading {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid #ddd;
+  padding-top: 3rem;
+}
+
+.section-heading h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.section-description {
+  font-size: 16px;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* === SKILLS SECTION === */
+.skills-section {
+  padding: 80px 20px;
+  background-color: #e0e0e0;
+  background-image: 
+    radial-gradient(circle, #bbb 2px, transparent 2px),
+    linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px);
+  background-size: 60px 60px, 40px 40px, 40px 40px;
+  
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-section::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 150px;
+  height: 150px;
+  border: 3px solid rgba(0,0,0,0.15);
+  border-radius: 50%;
+}
+
+.skills-section::after {
+  content: '';
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgba(0,0,0,0.15);
+  transform: rotate(45deg);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.skill-header {
+  background-color: #444444;
+  padding: 20px;
+}
+
+.skill-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.skill-body {
+  background-color: #ffffff;
+  padding: 25px;
+}
+
+.skill-body p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333333;
+  margin: 0;
+}
+
+>>>>>>> 7c12a4f399f0f90d24ffa6838941da4723df9267
 /* === PROJECTS === */
 #projects h1 {
     font-size: 3rem;
@@ -210,6 +402,7 @@ h1 {
     line-height: 1.8;
 }
 
+<<<<<<< HEAD
 /* === PROJECTS === */
 #projects h1 {
     font-size: 3rem;
@@ -543,6 +736,8 @@ nav {
   margin: 0;
 }
 
+=======
+>>>>>>> 7c12a4f399f0f90d24ffa6838941da4723df9267
 /* === ABOUT ME === */
 .container {
   max-width: 1100px;
@@ -574,13 +769,21 @@ nav {
 }
 
 .about-image {
+<<<<<<< HEAD
   flex: 1.2;
+=======
+  flex: 1.5;
+>>>>>>> 7c12a4f399f0f90d24ffa6838941da4723df9267
   min-width: 550px;
 }
 
 .about-image img {
   width: 100%;
+<<<<<<< HEAD
   max-width: 500px;
+=======
+  max-width: 600px;
+>>>>>>> 7c12a4f399f0f90d24ffa6838941da4723df9267
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   object-fit: cover;
@@ -593,7 +796,11 @@ nav {
 }
 
 .about-text p {
+<<<<<<< HEAD
   font-size: 1.40rem;
+=======
+  font-size: 1.50rem;
+>>>>>>> 7c12a4f399f0f90d24ffa6838941da4723df9267
   line-height: 1.8;
   color: #333;
   margin-bottom: 20px;
