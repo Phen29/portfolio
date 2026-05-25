@@ -201,6 +201,7 @@ h1 {
 .project-info {
     padding: 30px;
     text-align: left;
+    background: #e0e0e0;
 }
 
 .project-info h3 {
@@ -219,71 +220,85 @@ h1 {
     text-align: center;
 }
 
-/* MEDSYSTEM Section — FINAL PERFECT */
+/* MEDSYSTEM — FIXED ICON ERROR */
+.medsysm-card {
+    border-radius: 16px !important;
+    overflow: hidden;
+}
+
 .medsysm-card .card-header-green {
     background: #00b478;
     height: 220px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    position: relative;
-    overflow: visible;
 }
 
-.medsystem-icon {
-    width: 50px;
-    height: 50px;
-    max-width: 50px;
+.medsysm-card .medsystem-icon {
+    width: 70px !important;
+    height: 70px !important;
+    max-width: 70px !important;
+    max-height: 70px !important;
     object-fit: contain;
-    display: block;
-    margin: 0;
 }
 
 .view-live-btn {
-    position: static;
-    display: block;
-    margin: 0;
     background: #ffffff;
-    color: #007a52;
-    border: none;
-    padding: 8px 22px;
+    color: #111111;
+    padding: 8px 26px;
     border-radius: 20px;
+    text-decoration: none;
     font-weight: bold;
-    font-size: 0.85rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: inline-block;
 }
 
 .medsysm-card .project-info {
-    margin-top: 0;
-    padding-top: 20px;
-    position: relative;
-    z-index: 1;
+    padding: 30px;
+    text-align: center !important;
+    background: #e0e0e0;
 }
 
 .tech-tags {
     display: flex;
-    gap: 10px;
-    margin-bottom: 18px;
+    gap: 12px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .tech-tags span {
-    background: #f3e9dc;
-    color: #80391e;
-    padding: 5px 14px;
+    background: #ffffff;
+    color: #444;
+    padding: 6px 16px;
     border-radius: 20px;
     font-size: 0.85rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.medsysm-card .project-info h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+}
+
+.medsysm-card .project-info p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .doc-link {
-    display: block;
-    text-align: center;
     color: #80391e;
     text-decoration: none;
     font-weight: 500;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .doc-link:hover {
@@ -291,72 +306,113 @@ h1 {
 }
 
 /* CERTIFICATES Section */
-.certificates-section {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #e0e0e0;
-}
-
-.sub-heading {
-    color: #008956;
-    font-size: 18px;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-
 .main-heading {
-    color: #ffffff;
-    font-size: 36px;
+    color: #333333;
+    font-size: 42px;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .certificates-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .row {
     display: flex;
     justify-content: center;
-    gap: 140px;
-    margin-bottom: 40px;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
 }
 
-.top-row {
-    margin-left: -80px;
+.single-row {
+    width: 100%;
 }
 
-.bottom-row {
-    gap: 110px;
-    margin-left: 0;
-}
-
+/* CERTIFICATES For card/images */
 .cert-card {
+    width: 280px;       
+    height: 380px;      
+    padding: 20px;
     background-color: #ffffff;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    width: 150px;
-    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    justify-content: space-between;
 }
 
 .cert-card img {
     width: 100%;
-    height: 140px;
+    height: auto;
+    max-height: 300px;
     object-fit: contain;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.view-btn {
+    padding: 10px 22px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+}
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+    .cert-card {
+        width: 220px;
+        height: 310px;
+    }
+    .cert-card img {
+        max-height: 240px;
+    }
+    .row {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cert-card {
+        width: 170px;
+        height: 240px;
+    }
+    .cert-card img {
+        max-height: 180px;
+    }
+    .row {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 576px) {
+    .cert-card {
+        width: 160px;
+        height: 220px;
+    }
+    .cert-card img {
+        height: 170px;
+    }
 }
 
 .view-btn {
     display: inline-block;
-    padding: 4px 12px;
+    padding: 8px 18px;
     background-color: transparent;
     color: #333;
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -633,11 +689,7 @@ h1 {
   background-color: #000;
 }
 
-/* ==============================================
-   RESPONSIVE DESIGN — FOR ALL SCREENS
-   ============================================== */
-
-/* TABLET & SMALL LAPTOPS (max 992px) */
+/* TABLET & SMALL LAPTOPS */
 @media (max-width: 992px) {
     header {
         padding: 15px 20px;
@@ -735,18 +787,26 @@ h1 {
     }
 
     .card-header-green {
-        height: 180px;
+        height: 180px !important;
     }
     .medsystem-icon {
-        width: 40px;
-        height: 40px;
+        width: 40px !important;
+        height: 40px !important;
     }
     .view-live-btn {
-        padding: 6px 16px;
-        font-size: 0.75rem;
+        padding: 6px 16px !important;
+        font-size: 0.75rem !important;
     }
     .project-info h3 {
-        font-size: 1.3rem;
+        font-size: 1.3rem !important;
+    }
+
+    .cert-card {
+        width: 160px;
+        height: 220px;
+    }
+    .cert-card img {
+        height: 170px;
     }
 
     .skills-grid {
@@ -768,5 +828,60 @@ h1 {
     }
     .info-box p {
         font-size: 1rem;
+    }
+}
+/* FOOTER Section */
+.portfolio-footer {
+    background-color: #888888;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-main-text {
+    color: #fff8e8;
+    font-size: 48px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+
+.footer-sub-text {
+    color: #fff8e8;
+    font-size: 18px;
+    margin: 0 0 8px 0;
+    opacity: 0.9;
+}
+
+.footer-quote {
+    color: #fff8e8;
+    font-size: 16px;
+    margin: 0;
+    opacity: 0.85;
+    font-style: Sans-serif;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .footer-main-text {
+        font-size: 32px;
+    }
+    .footer-sub-text {
+        font-size: 15px;
+    }
+    .footer-quote {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-main-text {
+        font-size: 24px;
+    }
+    .footer-sub-text {
+        font-size: 13px;
+    }
+    .footer-quote {
+        font-size: 11px;
     }
 }
